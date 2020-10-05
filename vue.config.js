@@ -2,7 +2,7 @@ module.exports = {
   devServer: {
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',
+        target: 'http://www.hd-wallet.com:8000',
         ws: true,
         changeOrigin: true
       }
