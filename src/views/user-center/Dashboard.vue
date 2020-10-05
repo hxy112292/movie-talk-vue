@@ -238,7 +238,7 @@ export default {
     this.getUserRecord()
     UserService.detail()
     if (this.user.avatar) {
-      this.avatar = 'http://35.193.61.114/avatar/' + this.user.uid + '/' + this.user.avatar
+      this.avatar = 'http://www.hd-wallet.com/avatar/' + this.user.uid + '/' + this.user.avatar
     }
   },
   methods: {
@@ -256,7 +256,7 @@ export default {
     },
     uploadAvatar (file) {
       UserService.uploadAvatar(file.file).then(res => {
-        this.avatar = 'http://35.193.61.114/avatar/' + this.user.uid + '/' + res.result
+        this.avatar = 'http://www.hd-wallet.com/avatar/' + this.user.uid + '/' + res.result
         this.$message.success('User avatar Changed')
       }).catch(() => {
       })
